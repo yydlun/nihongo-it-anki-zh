@@ -1,0 +1,101 @@
+Sentence,Translation,Cloze,Pronunciation,Note,Register,KeyMeaning,PitchAccent,TranslationZh
+直しといたよ。,Fixed it for you.,直しといた,直【なお】しといたよ。,Chat - Done,casual,fixed it (in advance),"<ruby class=""vocab"">直しといた<rt>なおしといた</rt></ruby>",帮你改好了。
+これバグってない？,Isn't this bugged?,バグって,これバグってない？,Chat - Debug,casual,is buggy (slang),"<span class=""vocab"">バグって</span>",这是不是有 bug？
+たぶん間に合わなそう。,Probably won't make it in time.,間に合わなそう,たぶん間【ま】に合【あ】わなそう。,Chat - Deadline,casual,won't make it in time,"<ruby class=""vocab"">間に合わなそう<rt>まにあわなそう</rt></ruby>",大概赶不上了。
+ちょっと見てもらっていい？,Can you take a quick look?,見てもらっていい,ちょっと見【み】てもらっていい？,Chat - Request,casual,can you look at it (casual),"<ruby class=""vocab"">見てもらっていい<rt>みてもらっていい</rt></ruby>",能帮我快速看一眼吗？
+レビューお願い！,Review please!,お願い,レビューお願【ねが】い！,Chat - Request,casual,please (casual),"<ruby class=""vocab"">お願い<rt>おねがい</rt></ruby>",求评审！
+アプルーブしたよ。,Approved it.,アプルーブ,アプルーブしたよ。,Chat - Review,casual,approve (loanword),"<ruby class=""vocab"">アプルーブ<rt><span class=""pitch-l"">あ</span><span class=""pitch-h"">ぷ</span><span class=""pitch-h"">る</span><span class=""pitch-l"">ー</span><span class=""pitch-l"">ぶ</span></rt></ruby>",已经通过了哦。
+まだWIPだから見なくていいよ。,"Still WIP, no need to look yet.",WIP,まだWIPだから見【み】なくていいよ。,Chat - Status,casual,work in progress,"<span class=""vocab"">WIP</span>",还是 WIP，不用看了。
+動いた！,It works now!,動いた,動【うご】いた！,Chat - Success,casual,it worked,"<ruby class=""vocab"">動いた<rt>うごいた</rt></ruby>",能跑了！
+ローカルだと動くんだけどなあ。,It works locally though...,動くんだけど,ローカルだと動【うご】くんだけどなあ。,Chat - Debug,casual,"works, but...","<ruby class=""vocab"">動くんだけど<rt>うごくんだけど</rt></ruby>",我本地能跑啊……
+再現できた。,Reproduced it.,再現できた,再現【さいげん】できた。,Chat - Debug,casual,managed to reproduce,"<ruby class=""vocab"">再現できた<rt>さいげんできた</rt></ruby>",我复现了。
+それな。,Exactly. / So true.,それな,それな。,Chat - Agreement,casual,exactly (slang),"<span class=""vocab"">それな</span>",就是说啊。
+わかる。,I feel you.,わかる,わかる。,Chat - Agreement,casual,"I know, right","<span class=""vocab""><span class=""pitch-l"">わ</span><span class=""pitch-h"">か</span><span class=""pitch-l"">る</span></span>",懂你。
+りょ。,K. (got it),りょ,りょ。,Chat - Acknowledgment,casual,roger (slang),"<span class=""vocab"">りょ</span>",好嘞。
+一旦マージしちゃうね。,Gonna go ahead and merge.,しちゃう,一旦【いったん】マージしちゃうね。,Chat - Git,casual,go ahead and do,"<span class=""vocab"">しちゃう</span>",我先合并了啊。
+あとでやっとく。,I'll get to it later.,やっとく,あとでやっとく。,Chat - Promise,casual,will do it (in advance),"<span class=""vocab"">やっとく</span>",过会儿再弄。
+今日中に終わらせるね。,I'll finish it today.,終わらせる,今日中【きょうじゅう】に終【お】わらせるね。,Chat - Promise,casual,will finish,"<ruby class=""vocab"">終わらせる<rt>おわらせる</rt></ruby>",今天之内搞定。
+ごめん、まだできてない。,"Sorry, not done yet.",できてない,ごめん、まだできてない。,Chat - Status,casual,not done yet,"<span class=""vocab"">できてない</span>",抱歉，还没做完。
+もうちょいでできる。,Almost done.,もうちょい,もうちょいでできる。,Chat - Status,casual,a little more (slang),"<span class=""vocab"">もうちょい</span>",马上就好。
+それでいいよ。,That works for me.,いいよ,それでいいよ。,Chat - Agreement,casual,that's fine,"<span class=""vocab"">いいよ</span>",这样就行。
+どっちでもいいよ。,Either is fine.,どっちでも,どっちでもいいよ。,Chat - Agreement,casual,either way,"<span class=""vocab"">どっちでも</span>",哪个都行。
+まじか。,Seriously?,まじか,まじか。,Chat - Reaction,casual,seriously (slang),"<span class=""vocab""><span class=""pitch-h"">ま</span><span class=""pitch-l"">じ</span><span class=""pitch-l"">か</span></span>",真的假的？
+やばい、本番落ちてる。,"Crap, prod is down.",落ちてる,やばい、本番【ほんばん】落【お】ちてる。,Chat - Incident,casual,is down,"<ruby class=""vocab"">落ちてる<rt>おちてる</rt></ruby>",糟了，生产环境挂了。
+CIこけてるよ。,CI is failing.,こけてる,CIこけてるよ。,Chat - CI,casual,"failing (slang, lit. tripping)","<span class=""vocab"">こけてる</span>",CI 挂了哦。
+テスト通った？,Did the tests pass?,通った,テスト通【とお】った？,Chat - Testing,casual,passed,"<ruby class=""vocab"">通った<rt>とおった</rt></ruby>",测试过了吗？
+全部グリーンになった！,All green now!,グリーン,全部【ぜんぶ】グリーンになった！,Chat - Testing,casual,green (passing),"<ruby class=""vocab"">グリーン<rt><span class=""pitch-l"">ぐ</span><span class=""pitch-h"">り</span><span class=""pitch-l"">ー</span><span class=""pitch-l"">ん</span></rt></ruby>",全绿了！
+コンフリってる。,Got a conflict.,コンフリ,コンフリってる。,Chat - Git,casual,conflict (abbreviation),"<span class=""vocab"">コンフリ</span>",冲突了。
+リベースしといて。,"Rebase it, would you.",しといて,リベースしといて。,Chat - Git,casual,do it beforehand (casual),"<span class=""vocab"">しといて</span>",帮我 rebase 一下。
+プッシュした？,Did you push?,プッシュした,プッシュした？,Chat - Git,casual,pushed?,"<span class=""vocab"">プッシュした</span>",推了吗？
+あ、プッシュ忘れてた。,"Oh, forgot to push.",忘れてた,あ、プッシュ忘【わす】れてた。,Chat - Git,casual,forgot,"<ruby class=""vocab"">忘れてた<rt>わすれてた</rt></ruby>",啊，我忘了推。
+デプロイしていい？,OK to deploy?,していい,デプロイしていい？,Chat - Deploy,casual,is it OK to do,"<span class=""vocab"">していい</span>",可以部署吗？
+ちょい待って。,Hang on a sec.,ちょい待って,ちょい待【ま】って。,Chat - Wait,casual,wait a sec,"<ruby class=""vocab"">ちょい待って<rt>ちょいまって</rt></ruby>",等一下。
+先行ってて。,Go ahead without me.,先行ってて,先【さき】行【い】ってて。,Chat - Meeting,casual,go ahead,"<ruby class=""vocab"">先行ってて<rt>さきいってて</rt></ruby>",你们先开始吧。
+今ハドルいける？,Can you hop on a huddle now?,ハドル,今【いま】ハドルいける？,Chat - Call,casual,huddle,"<ruby class=""vocab"">ハドル<rt><span class=""pitch-h"">は</span><span class=""pitch-l"">ど</span><span class=""pitch-l"">る</span></rt></ruby>",现在能进 huddle 语音聊一下吗？
+5分だけ通話いい？,Got 5 minutes for a call?,通話,5分【ふん】だけ通話【つうわ】いい？,Chat - Call,casual,call,"<ruby class=""vocab"">通話<rt><span class=""pitch-l"">つ</span><span class=""pitch-h"">う</span><span class=""pitch-h"">わ</span></rt></ruby>",能打个 5 分钟电话吗？
+聞こえてる？,Can you hear me?,聞こえてる,聞【き】こえてる？,Chat - Call,casual,can hear,"<ruby class=""vocab"">聞こえてる<rt>きこえてる</rt></ruby>",能听见吗？
+音切れてるよ。,Your audio is cutting out.,切れてる,音【おと】切【き】れてるよ。,Chat - Call,casual,cutting out,"<ruby class=""vocab"">切れてる<rt>きれてる</rt></ruby>",你声音断断续续的。
+画面共有見えてる？,Can you see my screen?,画面共有,画面【がめん】共有【きょうゆう】見【み】えてる？,Chat - Call,casual,screen share,"<ruby class=""vocab"">画面共有<rt>がめんきょうゆう</rt></ruby>",能看见我的共享屏幕吗？
+ミュートなってるよ。,You're on mute.,ミュート,ミュートなってるよ。,Chat - Call,casual,mute,"<ruby class=""vocab"">ミュート<rt><span class=""pitch-h"">みゅ</span><span class=""pitch-l"">ー</span><span class=""pitch-l"">と</span></rt></ruby>",你静音了。
+後で資料送るね。,I'll send the docs later.,送るね,後【あと】で資料【しりょう】送【おく】るね。,Chat - Share,casual,will send (casual),"<ruby class=""vocab"">送るね<rt>おくるね</rt></ruby>",回头我把资料发你。
+リンク貼っとくね。,I'll drop the link here.,貼っとく,リンク貼【は】っとくね。,Chat - Share,casual,will paste (in advance),"<ruby class=""vocab"">貼っとく<rt>はっとく</rt></ruby>",我把链接贴这儿了。
+スレッドに書いといた。,Put it in the thread.,書いといた,スレッドに書【か】いといた。,Chat - Slack,casual,wrote it down (in advance),"<ruby class=""vocab"">書いといた<rt>かいといた</rt></ruby>",我写在帖子里了。
+DMした。,DM'd you.,DMした,DMした。,Chat - Slack,casual,sent a DM,"<span class=""vocab"">DMした</span>",私聊你了。
+あとで返信するね。,I'll reply later.,返信,あとで返信【へんしん】するね。,Chat - Slack,casual,reply,"<ruby class=""vocab"">返信<rt><span class=""pitch-l"">へ</span><span class=""pitch-h"">ん</span><span class=""pitch-h"">し</span><span class=""pitch-h"">ん</span></rt></ruby>",我回头回复你。
+既読つけといて。,Mark it read at least.,既読,既読【きどく】つけといて。,Chat - Slack,casual,read (receipt),"<ruby class=""vocab"">既読<rt>きどく</rt></ruby>",至少先标个已读吧。
+これ誰のタスク？,Whose task is this?,誰の,これ誰【だれ】のタスク？,Chat - Task,casual,whose,"<ruby class=""vocab"">誰の<rt>だれの</rt></ruby>",这是谁的任务？
+これ僕がやるよ。,I'll take this one.,やるよ,これ僕【ぼく】がやるよ。,Chat - Task,casual,will do it,"<span class=""vocab"">やるよ</span>",这个我来做。
+任せた！,All yours!,任せた,任【まか】せた！,Chat - Task,casual,leave it to you,"<ruby class=""vocab"">任せた<rt>まかせた</rt></ruby>",交给你了！
+巻き取るよ。,I'll take it over.,巻き取る,巻【ま】き取【と】るよ。,Chat - Task,casual,take over (work),"<ruby class=""vocab"">巻き取る<rt><span class=""pitch-l"">ま</span><span class=""pitch-h"">き</span><span class=""pitch-h"">と</span><span class=""pitch-l"">る</span></rt></ruby>",我来接手。
+助かる！,Lifesaver!,助かる,助【たす】かる！,Chat - Thanks,casual,that helps,"<ruby class=""vocab"">助かる<rt><span class=""pitch-l"">た</span><span class=""pitch-h"">す</span><span class=""pitch-h"">か</span><span class=""pitch-l"">る</span></rt></ruby>",帮大忙了！
+さすが！,Nice one!,さすが,さすが！,Chat - Praise,casual,as expected of you,"<span class=""vocab""><span class=""pitch-l"">さ</span><span class=""pitch-h"">す</span><span class=""pitch-h"">が</span></span>",不愧是你！
+ナイス！,Nice!,ナイス,ナイス！,Chat - Praise,casual,nice,"<ruby class=""vocab"">ナイス<rt><span class=""pitch-h"">な</span><span class=""pitch-l"">い</span><span class=""pitch-l"">す</span></rt></ruby>",漂亮！
+おつかれ！,Later! / Good work today!,おつかれ,おつかれ！,Chat - Greeting,casual,good work (casual),"<span class=""vocab"">おつかれ</span>",辛苦了！
+お先です！,I'm heading out!,お先,お先【さき】です！,Chat - Greeting,casual,leaving first,"<ruby class=""vocab"">お先<rt>おさき</rt></ruby>",我先撤了！
+今日リモートにする。,Going remote today.,リモートにする,今日【きょう】リモートにする。,Chat - Schedule,casual,go remote,"<span class=""vocab"">リモートにする</span>",今天我远程办公。
+午後半休もらうね。,Taking a half day this afternoon.,半休,午後【ごご】半休【はんきゅう】もらうね。,Chat - Schedule,casual,half day off,"<ruby class=""vocab"">半休<rt><span class=""pitch-l"">は</span><span class=""pitch-h"">ん</span><span class=""pitch-h"">きゅ</span><span class=""pitch-h"">う</span></rt></ruby>",下午我请半天假。
+体調わるいんで休みます。,"Feeling sick, taking the day off.",体調,体調【たいちょう】わるいんで休【やす】みます。,Chat - Schedule,casual,physical condition,"<ruby class=""vocab"">体調<rt><span class=""pitch-l"">た</span><span class=""pitch-h"">い</span><span class=""pitch-h"">ちょ</span><span class=""pitch-h"">う</span></rt></ruby>",身体不舒服，我请假了。
+退勤します。,Clocking out.,退勤,退勤【たいきん】します。,Chat - Schedule,casual,clock out,"<ruby class=""vocab"">退勤<rt><span class=""pitch-l"">た</span><span class=""pitch-h"">い</span><span class=""pitch-h"">き</span><span class=""pitch-h"">ん</span></rt></ruby>",我下班了。
+ランチ行ってきます。,Off to lunch.,行ってきます,ランチ行【い】ってきます。,Chat - Schedule,casual,heading out (be back),"<ruby class=""vocab"">行ってきます<rt>いってきます</rt></ruby>",我去吃午饭了。
+戻りました。,Back.,戻りました,戻【もど】りました。,Chat - Schedule,casual,I'm back,"<ruby class=""vocab"">戻りました<rt>もどりました</rt></ruby>",我回来了。
+ちょっと離席します。,Stepping away for a bit.,離席,ちょっと離席【りせき】します。,Chat - Schedule,casual,away from desk,"<ruby class=""vocab"">離席<rt><span class=""pitch-l"">り</span><span class=""pitch-h"">せ</span><span class=""pitch-h"">き</span></rt></ruby>",我离开一会儿。
+これ優先度高め？,Is this high priority?,高め,これ優先度【ゆうせんど】高【たか】め？,Chat - Priority,casual,on the high side,"<ruby class=""vocab"">高め<rt><span class=""pitch-l"">た</span><span class=""pitch-h"">か</span><span class=""pitch-h"">め</span></rt></ruby>",这个优先级高吗？
+急ぎじゃないよ。,No rush.,急ぎ,急【いそ】ぎじゃないよ。,Chat - Priority,casual,urgent / rush,"<ruby class=""vocab"">急ぎ<rt><span class=""pitch-l"">い</span><span class=""pitch-h"">そ</span><span class=""pitch-h"">ぎ</span></rt></ruby>",不急。
+今手が離せない。,Can't step away right now.,手が離せない,今【いま】手【て】が離【はな】せない。,Chat - Busy,casual,tied up,"<ruby class=""vocab"">手が離せない<rt>てがはなせない</rt></ruby>",我现在手头走不开。
+後でリマインドして。,Remind me later.,リマインド,後【あと】でリマインドして。,Chat - Request,casual,remind,"<span class=""vocab"">リマインド</span>",回头提醒我一下。
+ログ吐いてる？,Is it writing logs?,吐いてる,ログ吐【は】いてる？,Chat - Debug,casual,spitting out (logs/errors),"<ruby class=""vocab"">吐いてる<rt>はいてる</rt></ruby>",在打日志吗？
+エラー出てるよ。,There are errors showing.,エラー出てる,エラー出【で】てるよ。,Chat - Debug,casual,errors appearing,"<ruby class=""vocab"">エラー出てる<rt>えらーでてる</rt></ruby>",报错了哦。
+直った！,Fixed!,直った,直【なお】った！,Chat - Success,casual,got fixed,"<ruby class=""vocab"">直った<rt>なおった</rt></ruby>",修好了！
+なんでだろ。,Wonder why.,なんでだろ,なんでだろ。,Chat - Debug,casual,I wonder why,"<span class=""vocab"">なんでだろ</span>",怎么回事呢。
+わかんない。,No idea.,わかんない,わかんない。,Chat - Debug,casual,dunno,"<span class=""vocab"">わかんない</span>",不知道。
+ググってみる。,I'll google it.,ググって,ググってみる。,Chat - Debug,casual,google it (verb),"<span class=""vocab"">ググって</span>",我搜一下。
+AIに聞いてみた。,Asked the AI.,聞いてみた,AIに聞【き】いてみた。,Chat - AI,casual,tried asking,"<ruby class=""vocab"">聞いてみた<rt>きいてみた</rt></ruby>",我问了 AI。
+それアリだね。,That could work.,アリ,それアリだね。,Chat - Agreement,casual,viable (slang),"<ruby class=""vocab"">アリ<rt><span class=""pitch-h"">あ</span><span class=""pitch-l"">り</span></rt></ruby>",这个可以有。
+それはナシかな。,That's a no for me.,ナシ,それはナシかな。,Chat - Disagreement,casual,not viable (slang),"<ruby class=""vocab"">ナシ<rt><span class=""pitch-l"">な</span><span class=""pitch-h"">し</span></rt></ruby>",这个我觉得不行。
+微妙かも。,Not sure about that.,微妙,微妙【びみょう】かも。,Chat - Disagreement,casual,iffy,"<ruby class=""vocab"">微妙<rt><span class=""pitch-l"">び</span><span class=""pitch-h"">みょ</span><span class=""pitch-h"">う</span></rt></ruby>",有点微妙。
+知らんかった。,Didn't know that.,知らんかった,知【し】らんかった。,Chat - Reaction,casual,didn't know (casual),"<ruby class=""vocab"">知らんかった<rt>しらんかった</rt></ruby>",我之前不知道。
+なるほどね。,Gotcha.,なるほどね,なるほどね。,Chat - Acknowledgment,casual,I see (casual),"<span class=""vocab"">なるほどね</span>",原来如此。
+了解です！,Got it!,了解です,了解【りょうかい】です！,Chat - Acknowledgment,casual,roger / got it,"<ruby class=""vocab"">了解です<rt>りょうかいです</rt></ruby>",了解！
+たしかに。,Fair point.,たしかに,たしかに。,Chat - Agreement,casual,true / fair,"<span class=""vocab"">たしかに</span>",确实。
+バグっぽいね。,Looks like a bug.,っぽい,バグっぽいね。,Chat - Reaction,casual,seems like,"<span class=""vocab""><span class=""pitch-l"">っ</span><span class=""pitch-h"">ぽ</span><span class=""pitch-l"">い</span></span>",看着像 bug。
+一旦これで進めるね。,Going with this for now.,一旦,一旦【いったん】これで進【すす】めるね。,Chat - Decision,casual,for now / tentatively,"<ruby class=""vocab"">一旦<rt><span class=""pitch-l"">い</span><span class=""pitch-h"">っ</span><span class=""pitch-h"">た</span><span class=""pitch-h"">ん</span></rt></ruby>",先这么推进吧。
+とりあえず動くやつできた。,Got a rough working version.,とりあえず,とりあえず動【うご】くやつできた。,Chat - Progress,casual,for the time being,"<span class=""vocab""><span class=""pitch-l"">と</span><span class=""pitch-h"">り</span><span class=""pitch-h"">あ</span><span class=""pitch-l"">え</span><span class=""pitch-l"">ず</span></span>",先做了个能跑的版本凑合着。
+雑にやっつけた。,Hacked it together.,やっつけた,雑【ざつ】にやっつけた。,Chat - Progress,casual,knocked out (roughly),"<span class=""vocab"">やっつけた</span>",我糊弄着拼出来了。
+後でちゃんと直す。,I'll clean it up properly later.,ちゃんと,後【あと】でちゃんと直【なお】す。,Chat - Promise,casual,properly,"<span class=""vocab""><span class=""pitch-l"">ちゃ</span><span class=""pitch-h"">ん</span><span class=""pitch-h"">と</span></span>",回头我再好好改。
+これ仕様？,Is this intended behavior?,これ仕様,これ仕様【しよう】？,Chat - Debug,casual,is this the spec?,"<ruby class=""vocab"">これ仕様<rt>これしよう</rt></ruby>",这是设计如此吗？
+仕様変わったらしいよ。,Apparently the spec changed.,らしい,仕様【しよう】変【か】わったらしいよ。,Chat - News,casual,apparently,"<span class=""vocab"">らしい</span>",听说规格变了。
+聞いてないよー。,Nobody told me!,聞いてない,聞【き】いてないよー。,Chat - Reaction,casual,wasn't told,"<ruby class=""vocab"">聞いてない<rt>きいてない</rt></ruby>",没人告诉我啊——。
+それ先週言ったじゃん。,I told you that last week.,じゃん,それ先週【せんしゅう】言【い】ったじゃん。,Chat - Reaction,casual,didn't I (casual emphasis),"<span class=""vocab"">じゃん</span>",我上周就说了啊。
+ですよね。,Right? I thought so.,ですよね,ですよね。,Chat - Agreement,casual,right? (seeking agreement),"<span class=""vocab"">ですよね</span>",就是说嘛。
+それでいきましょ。,Let's go with that.,いきましょ,それでいきましょ。,Chat - Decision,casual,let's go (clipped),"<span class=""vocab"">いきましょ</span>",就这么定了。
+ワンチャンいけるかも。,Might just work.,ワンチャン,ワンチャンいけるかも。,Chat - Reaction,casual,maybe (slang),"<span class=""vocab"">ワンチャン</span>",说不定真能行。
+ガチで助かった。,Seriously saved me.,ガチで,ガチで助【たす】かった。,Chat - Thanks,casual,seriously (slang),"<span class=""vocab"">ガチで</span>",真的帮大忙了。
+神対応だった。,That support was god-tier.,神対応,神【かみ】対応【たいおう】だった。,Chat - Praise,casual,god-tier response,"<ruby class=""vocab"">神対応<rt>かみたいおう</rt></ruby>",那波支持简直神了。
+沼にはまってる。,I'm stuck in a rabbit hole.,沼,沼【ぬま】にはまってる。,Chat - Debug,casual,swamp (rabbit hole),"<ruby class=""vocab"">沼<rt><span class=""pitch-l"">ぬ</span><span class=""pitch-h"">ま</span></rt></ruby>",我陷进坑里了。
+詰んだ。,I'm stuck. Game over.,詰んだ,詰【つ】んだ。,Chat - Debug,casual,checkmated (stuck),"<ruby class=""vocab"">詰んだ<rt>つんだ</rt></ruby>",我卡死了。
+力技で解決した。,Brute-forced it.,力技,力技【ちからわざ】で解決【かいけつ】した。,Chat - Debug,casual,brute force,"<ruby class=""vocab"">力技<rt><span class=""pitch-l"">ち</span><span class=""pitch-h"">か</span><span class=""pitch-h"">ら</span><span class=""pitch-h"">わ</span><span class=""pitch-h"">ざ</span></rt></ruby>",我用蛮力解决了。
+おまかせで。,Your call.,おまかせ,おまかせで。,Chat - Decision,casual,up to you,"<span class=""vocab"">おまかせ</span>",你定吧。
+異論なし！,No objections!,異論,異論【いろん】なし！,Chat - Agreement,casual,objection / dissent,"<ruby class=""vocab"">異論<rt><span class=""pitch-l"">い</span><span class=""pitch-h"">ろ</span><span class=""pitch-h"">ん</span></rt></ruby>",没意见！
+乾杯！リリースおめでとう！,Cheers! Congrats on the release!,おめでとう,乾杯【かんぱい】！リリースおめでとう！,Chat - Celebration,casual,congrats,"<span class=""vocab"">おめでとう</span>",干杯！恭喜发布！
+今日はもう無理、寝る。,"I'm done for today, going to bed.",無理,今日【きょう】はもう無理【むり】、寝【ね】る。,Chat - Status,casual,can't anymore,"<ruby class=""vocab"">無理<rt><span class=""pitch-h"">む</span><span class=""pitch-l"">り</span></rt></ruby>",今天不行了，我睡了。
+明日の朝イチでやるね。,First thing tomorrow morning.,朝イチ,明日【あした】の朝【あさ】イチでやるね。,Chat - Promise,casual,first thing in the morning,"<ruby class=""vocab"">朝イチ<rt>あさいち</rt></ruby>",明天一早我就做。

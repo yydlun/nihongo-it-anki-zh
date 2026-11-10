@@ -1,0 +1,40 @@
+[project]
+name = "nihongo-it-anki"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jp-core",
+    "edge-tts>=6.1.0",
+    "fugashi>=1.5.2",
+    "genanki>=0.13.1",
+    "jaconv>=0.4.1",
+    "mojimoji>=0.0.13",
+    "pyopenjtalk>=0.4.1",
+    "soundfile>=0.13.1",
+    "unidic-lite>=1.0.8",
+]
+
+[dependency-groups]
+dev = [
+    "anki>=25.9.4",
+    "pytest>=9.0.2",
+]
+
+[tool.uv]
+# The committed `uv.lock` is format `revision = 3` with per-entry `upload-time`
+# metadata. uv older than 0.8.4 writes `revision = 2` and silently rewrites the
+# whole file to drop that metadata. 0.8.4 is the first release whose `REVISION`
+# constant is 3 (crates/uv-resolver/src/lock/mod.rs). This setting only stops
+# uv 0.5.14 and later, which is when uv started reading it; anything older -
+# 0.5.9 is what this machine has - prints `unknown field required-version` and
+# runs anyway. tests/test_lockfile_format.py reads the lock itself and is the
+# guard that holds whatever uv produced it.
+required-version = ">=0.8.4"
+
+[tool.uv.sources]
+# Pinned to a revision rather than tracking main: a library change can alter
+# how cards render, and that should be a deliberate bump with a rebuild and a
+# deck comparison, never something a fresh `uv sync` picks up silently.
+"jp-core" = { git = "https://github.com/KakkoiDev/jp-core", rev = "211c0b079bbc18925b3ba2976f78c74b15cf1cc7" }

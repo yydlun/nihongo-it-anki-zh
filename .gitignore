@@ -1,0 +1,48 @@
+# Markdown files (AI agent knowledge files)
+*.md
+!README.md
+!AGENTS.md
+!CLAUDE.md
+!ANKIWEB-README.md
+!docs/**/*.md
+!audits/**/*.md
+!experiments/**/*.md
+!skills/**/*.md
+!decks/**/REFERENCE.md
+
+# Backup files
+*.bak
+*.backup
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.uv/
+
+# uv
+.python-version
+
+# Audio output (large files)
+tier*-audio/
+decks/*/tier*-audio/
+decks/*/tier*-audio-female/
+test_*.mp3
+
+# Anki output
+*.apkg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+samples/
+experiments/kokoro-pause-test/audio/
+
+# Chinese fork additions
+build-zh/

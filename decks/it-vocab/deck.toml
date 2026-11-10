@@ -1,0 +1,42 @@
+[deck]
+slug = "it-vocab"
+name = "Japanese IT Vocabulary"
+model_id = 1607392323
+deck_base_id = 2059400110
+
+[tiers]
+count = 15
+
+[tiers.names]
+1 = "Tier 01 - Foundational"
+2 = "Tier 02 - Basic Development"
+3 = "Tier 03 - Intermediate"
+4 = "Tier 04 - Advanced"
+5 = "Tier 05 - Communication"
+6 = "Tier 06 - Expert"
+7 = "Tier 07 - Job Interview"
+8 = "Tier 08 - Problem Solving"
+9 = "Tier 09 - AI & Agents"
+10 = "Tier 10 - Documentation & Engineering Culture"
+11 = "Tier 11 - Casual Chat"
+12 = "Tier 12 - Live Meetings"
+13 = "Tier 13 - Corporate Life"
+14 = "Tier 14 - Business Email"
+15 = "Tier 15 - Written Tickets & Commits"
+
+[tiers.sizes]
+1 = 150
+2 = 200
+3 = 250
+4 = 200
+5 = 100
+6 = 115
+7 = 30
+8 = 30
+9 = 50
+10 = 51
+11 = 100
+12 = 100
+13 = 60
+14 = 40
+15 = 40
