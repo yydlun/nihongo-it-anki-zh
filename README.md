@@ -2,16 +2,18 @@
 
 <img src="demo.png" alt="Anki deck demo" width="600">
 
+## 本フォークについて
+
+本リポジトリは [KakkoiDev 氏の nihongo-it-anki](https://github.com/KakkoiDev/nihongo-it-anki)（MIT License）をフォークしたもので、変更はデータ層と独立スクリプト 1 本のみです。
+
+- **中国語翻訳列の追加**：it-vocab の `decks/it-vocab/tier1-vocabulary.csv` 〜 `tier15-vocabulary.csv`（全 15 ファイル・計 1,516 文）に、中国語翻訳列 `TranslationZh` を追加しました。翻訳は英語訳ではなく日本語原文に基づいて作成しています。既存列の内容・行数・順序には変更を加えていません。
+- **ビルドパイプラインは未変更**：9 フィールドのモデル、テンプレート、`deck.toml`、`scripts/` 配下のスクリプトは元のままです。モデルを変更すると既存ユーザーの学習記録に影響するためです（追加した列は元のパイプラインでは無視されます）。
+- **中国語版ビルドスクリプト**：ルートの `build_zh_deck.py` は独立スクリプトで、専用モデルにより中国語版 `build-zh/it-vocab-zh.apkg` を生成します（表面：日本語文、裏面：中国語訳・英語訳・KeyMeaning・Note の順）。実行は `python3 build_zh_deck.py`（要 genanki）。
+- **LICENSE**：元のリポジトリには LICENSE ファイルがなかったため、原作者 KakkoiDev 氏の著作権表示とともに MIT 全文を補いました。中国語翻訳部分も MIT で公開します。
+
+---
+
 Multi-deck Anki generator for IT Japanese. AI-generated audio, pitch accent coloring, and 3 card types designed for real workplace skill building. Open source.
-
-## 中文说明（本 fork 的改动）
-
-本仓库基于 [KakkoiDev/nihongo-it-anki](https://github.com/KakkoiDev/nihongo-it-anki)（MIT License），改动只发生在数据层与一个独立脚本：
-
-- **it-vocab 牌组新增中文翻译列**：`decks/it-vocab/tier1-vocabulary.csv` ～ `tier15-vocabulary.csv` 全部 15 个文件、共 1,516 句，每行末尾新增一列 `TranslationZh`，为整句日语提供简体中文翻译（以日文原句为准，英文 `Translation` 作对照）。原有 8 列的内容、行数与顺序未做任何修改。
-- **原构建管线未动**：it-vocab 的九字段 Anki 模型、模板、样式与 `deck.toml` 保持原样（改动模型会毁掉老用户的复习进度），原 `scripts/` 下的脚本也未修改；多出的 `TranslationZh` 列会被原管线自然忽略。
-- **中文版牌组构建脚本**：仓库根目录的 `build_zh_deck.py` 是独立脚本，使用自有模型与 ID 读取上述 CSV，生成中文版牌组 `build-zh/it-vocab-zh.apkg`（卡片正面为日语句子，背面依次展示中文翻译、英文翻译、KeyMeaning 与 Note）。运行：`python3 build_zh_deck.py`（依赖 genanki）。
-- **LICENSE**：原仓库仅在 README 中声明 MIT、无独立 LICENSE 文件，本 fork 按原作者 KakkoiDev 的版权补齐了根目录的 `LICENSE` 全文；中文翻译内容同样以 MIT 发布。
 
 ## Decks
 
