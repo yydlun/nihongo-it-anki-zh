@@ -1,0 +1,75 @@
+name: zh-v2-generate-audio
+
+# 为 zh-v2/data/cards.json 里缺失的整句音频补齐 Edge TTS，提交回
+# zh-v2/media/，然后在本流程内直接打包发布带音频的新版。
+# （GITHUB_TOKEN 的推送不会触发其他工作流，所以打包合并在本流程。）
+# 触发：手动 dispatch，或 zh-v2/data/** 有推送时。本流程不监听
+# zh-v2/media/**，自己的提交不会递归触发自己。
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "zh-v2/data/**"
+
+permissions:
+  contents: write
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install edge-tts
+        run: pip install edge-tts
+
+      - name: Generate missing audio (Edge TTS)
+        working-directory: zh-v2
+        run: python tools/generate_audio.py
+
+      - name: Commit generated audio back
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add zh-v2/media
+          if git diff --cached --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "zh-v2: Add generated audio"
+            git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build and release with audio
+        if: steps.commit.outputs.pushed == 'true'
+        working-directory: zh-v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install genanki
+          python build.py
+          CREATED=""
+          for attempt in 1 2; do
+            NEXT=$(( $(gh release list --repo ${{ github.repository }} --limit 100 --json tagName --jq '[.[].tagName | select(test("^r[0-9]+$")) | ltrimstr("r") | tonumber] | max // 0') + 1 ))
+            TAG="r${NEXT}"
+            if gh release create "$TAG" dist/it-vocab-zh-v2.apkg \
+              --title "nihongo-it 中文版・新UI 第 ${NEXT} 版（$(date +%F)）" \
+              --notes "自动打包发布（含本轮补齐的发音，commit ${{ github.sha }}）。
+
+          固定下载链接（永远指向最新版）：
+          https://github.com/yydlun/nihongo-it-anki-zh/releases/latest/download/it-vocab-zh-v2.apkg
+
+          在 Anki 里直接用新包覆盖导入即可更新卡片内容，已有复习记录会保留；请勿先删除旧牌组再导入。"; then
+              CREATED="$TAG"; break
+            fi
+            sleep 5
+          done
+          if [ -z "$CREATED" ]; then echo "release failed"; exit 1; fi
+          echo "released $CREATED"

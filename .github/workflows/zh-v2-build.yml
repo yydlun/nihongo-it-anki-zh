@@ -1,0 +1,59 @@
+name: zh-v2-build-apkg
+
+# zh-v2（例句卡新 UI 中文版）打包发布：data/cards.json、media/ 或
+# zh-v2/build.py 变化时触发。固定下载链接（永远指向最新版）：
+# https://github.com/yydlun/nihongo-it-anki-zh/releases/latest/download/it-vocab-zh-v2.apkg
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "zh-v2/data/**"
+      - "zh-v2/media/**"
+      - "zh-v2/build.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: zh-v2
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install genanki
+
+      - name: Build apkg
+        run: python build.py
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CREATED=""
+          for attempt in 1 2; do
+            NEXT=$(( $(gh release list --repo ${{ github.repository }} --limit 100 --json tagName --jq '[.[].tagName | select(test("^r[0-9]+$")) | ltrimstr("r") | tonumber] | max // 0') + 1 ))
+            TAG="r${NEXT}"
+            if gh release create "$TAG" dist/it-vocab-zh-v2.apkg \
+              --title "nihongo-it 中文版・新UI 第 ${NEXT} 版（$(date +%F)）" \
+              --notes "自动打包发布（commit ${{ github.sha }}）。
+
+          固定下载链接（永远指向最新版）：
+          https://github.com/yydlun/nihongo-it-anki-zh/releases/latest/download/it-vocab-zh-v2.apkg
+
+          在 Anki 里直接用新包覆盖导入即可更新卡片内容，已有复习记录会保留；请勿先删除旧牌组再导入。"; then
+              CREATED="$TAG"; break
+            fi
+            sleep 5
+          done
+          if [ -z "$CREATED" ]; then echo "release failed"; exit 1; fi
+          echo "released $CREATED"
