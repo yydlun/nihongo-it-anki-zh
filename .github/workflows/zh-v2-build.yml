@@ -6,7 +6,7 @@ name: zh-v2-build-apkg
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - "zh-v2/data/**"
       - "zh-v2/media/**"

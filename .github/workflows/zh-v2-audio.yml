@@ -9,7 +9,7 @@ name: zh-v2-generate-audio
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - "zh-v2/data/**"
 
